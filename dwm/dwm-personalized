@@ -1,0 +1,10 @@
+#! /bin/sh
+setxkbmap -option terminate:ctrl_alt_bksp
+feh --bg-scale /home/nskinkel/docs/pics/wallpaper/debian_red.jpg
+conky -x 0 -y 0 -d
+while true 
+do
+    xsetroot -name  "$(date +"%a %b %d %r")"
+    sleep 1s
+done &
+exec dwm
